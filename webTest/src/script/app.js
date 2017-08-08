@@ -1,6 +1,6 @@
-import layer from './compaonents/lyaer/layer.js'
+import layer from './components/layer/layer.js';
 
 const App = function(){
-	console.log(layer)
+	console.log(layer);
 }
 new App()

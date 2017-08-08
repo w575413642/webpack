@@ -2,20 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title><%= htmlWebpackPlugin.options.title %></title>
+  <title>123</title>
 </head>
 <body>
-  <h2>hahaahah</h2>
-  <h2><%= htmlWebpackPlugin.options.date %></h2>
-  <% for( var ac in htmlWebpackPlugin.files) {%>
-  <%= ac %> :<%= JSON.stringify(htmlWebpackPlugin.files[ac])%>
-  <% } %>
 
-  -------
-  <!-- 这是个注释 -->
-
-    <% for( var ac in htmlWebpackPlugin.options) {%>
-  <%= ac %> :<%= JSON.stringify(htmlWebpackPlugin.options[ac])%>
-  <% } %>
 </body>
 </html>

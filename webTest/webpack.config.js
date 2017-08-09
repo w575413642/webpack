@@ -1,6 +1,5 @@
 var htmlWebpackPlugin = require('html-webpack-plugin');
 var path = require("path");
-console.log(module.dirname,__filename)
 module.exports = {
 	entry:'./src/script/app.js',
 	// 入口
@@ -11,7 +10,7 @@ module.exports = {
 		filename:"js/app.js"
 		// 版本号 -> 只修改更改过的版本号 MD5加密
 	},
-	module:{
+	module: {
 		loaders:[
 			{
 				test: /\.js$/,
@@ -43,14 +42,18 @@ module.exports = {
                 ]
             },
             {
-            	test:/\.jpg/,
-            	use:{
-            		loader:'file-loader',
-            		options:{
-            			name:'images/[name].[ext]'
-            			// 
-            		}
-            	}
+            	test:/\.(jpg|png|gif|svg)$/i,
+            	loaders:[
+            		'url-loader?name=images/[name].[ext]',
+            		// 'image-webpack' 处理不了连写
+            	]
+            	// use:{
+            		
+            	// 	loader:'url-loader',
+            	// 	options:{
+            	// 		name:'images/[name].[ext]'
+            	// 	}
+            	// }
             },
             {
             	test: /\.html$/,

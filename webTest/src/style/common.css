@@ -1,0 +1,6 @@
+@import './im.css';
+html,body{
+	padding:0px;
+	margin:0px;
+	background:url('../images/1.jpg');
+}

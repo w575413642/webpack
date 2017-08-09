@@ -1,8 +1,8 @@
-// import tpl from './layer.html'
+import tplc from './layer.tpl'
 function layer(){
 	return {
 		name:'layer',
-		tpl:tpl
+		tpl:tplc
 	}
 }
 
